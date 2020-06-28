@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="\src\main\resources\css\loginPage.css" rel="stylesheet" type="text/css"/>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <title>Student Login</title>
+    </head>
+    <body>
+    <body>
+        <%
+            if (request.getAttribute("error") != null) {
+                out.print("<p>");
+                out.print(request.getAttribute("error"));
+                out.print("</p>");
+            }
+        %>
+        <div class="sidenav">
+            <div class="login-main-text">
+                <h1>Student Login<br></h1>
+                <p>Please Login to your account</p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="col-md-5 col-sm-12">
+                <div class="login-form">
+                    <form action="/JavaWebApplication/UserController" method="post">
+                        <div class="form-group">
+                            <label>Student ID</label>
+                            <input type="text" id="login" class="form-control" name="username" placeholder="Student ID">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" id="password" class="form-control" name="password" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-login">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</body>
+</html>
