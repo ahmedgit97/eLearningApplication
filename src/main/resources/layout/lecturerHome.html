@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!doctype html>
 <html lang="en">
     <head>
@@ -80,6 +81,123 @@
                             </div>
                             <div class="form-group col-sm-3">
                                 <input type="text" class="form-control" placeholder="Type" name="type">
+=======
+<!doctype html> 
+<html lang="en"> 
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+        <meta name="description" content=""> 
+        <meta name="author" content=""> 
+        <link rel="icon" href="../../../../favicon.ico"> 
+        <title>Admin Panel</title>         
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;display=swap" rel="stylesheet">
+        <link href="\src\main\resources\css\dashboard.css" rel="stylesheet" type="text/css"/> 
+
+        <script src="https://kit.fontawesome.com/669b1e0c10.js" crossorigin="anonymous"></script>
+        <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
+        <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
+        <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+    </head>     
+    <body> 
+        <nav class="navbar navbar-dark bg-primary"> 
+            <a href="#"><img src="../static/images/logo.png" alt="logo" height="50px" width="80px"></a> 
+            <h2 style="color: white;">Algorithm Learning by Animation</h2>
+            <ul class="navbar-nav px-3"> 
+                <li class="nav-item text-nowrap"> 
+                    <form method="get" action="/JavaWebApplication/UserController"> 
+                        <button type="submit" class="btn btn-light btn-link">Sign out</button>                         
+                    </form>                     
+                </li>                 
+            </ul>             
+        </nav>         
+        <div class="container-fluid"> 
+            <div class="row"> 
+                <nav class="col-md-2 d-none d-md-block bg-light sidebar"> 
+                    <div class="sidebar-sticky"> 
+                        <ul class="nav flex-column"> 
+                            <li class="nav-item"> 
+                                <a class="nav-link active" href=""> <span data-feather="monitor"></span> 
+                                    Tutorials <span class="sr-only">(current)</span> </a> 
+                            </li>                             
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="ExtensionReqReceivedByAdmin.jsp"> <span data-feather="file-text"></span> 
+                                    Quizzes </a> 
+                            </li>                             
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="ReminderToClient.jsp"> <span data-feather="award"></span> 
+                                    Result </a> 
+                            </li>                             
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="NewsLetterWrittenByAdmin.jsp"> <span data-feather="clipboard"></span> 
+                                    Students List </a> 
+                            </li>                                                        
+                        </ul>                         
+                    </div>                     
+                </nav>                 
+                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4"> 
+                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom"> 
+                        <h1 class="h2">Lecturer Dashboard</h1> 
+                    </div>                     
+                    <form action="/JavaWebApplication/AdminController" method="post"> 
+                        <h5>Add New Tutorial</h5> 
+                        <div class="row"> 
+                            <div class="form-group col-sm-3"> 
+                                <input type="text" class="form-control" placeholder="Name" name="name"> 
+                            </div>                             
+                            <div class="form-group col-sm-3"> 
+                                <textarea id="desc" name="description" rows="4" cols="40" placeholder="Description"></textarea>
+                            </div>  
+                            <div class="form-group col-sm-3">
+                                <button type="submit" class="btn btn-primary mb-3">Add</button>
+                            </div>                                                                               
+                        </div>                         
+                    </form>                     
+                    <h5>List of Tutorials</h5>
+                    <section class="hk-sec-wrapper">
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="table-wrap">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Tutorial#</th>
+                                                    <th>Title</th>
+                                                    <th>Date Added</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td><a href="#">Bubble Sort</a></td>
+                                                    <td>May 15, 2015</td>
+                                                    <td> <a href="bubbleSort.html" class="mr-25" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil"></i> </a> <a href="#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-trash-o" style="margin-left: 15px;"></i> </a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td><a href="#">Selection Sort</a></td>
+                                                    <td>July 1, 2015</td>
+                                                    <td> <a href="#" class="mr-25" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil"></i> </a> <a href="#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-trash-o" style="margin-left: 15px;"></i> </a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td><a href="#">Merge Sort</a></td>
+                                                    <td>Apr 12, 2015</td>
+                                                    <td> <a href="#" class="mr-25" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil"></i> </a> <a href="#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-trash-o" style="margin-left: 15px;"></i> </a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td><a href="#">Insertion Sort</a></td>
+                                                    <td>Aug 9, 2015</td>
+                                                    <td> <a href="#" class="mr-25" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil"></i> </a> <a href="#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-trash-o" style="margin-left: 15px;"></i> </a> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+>>>>>>> Stashed changes
                             </div>
 
                             <div class="form-group col-md-2">

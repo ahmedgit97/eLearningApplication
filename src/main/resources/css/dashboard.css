@@ -14,7 +14,7 @@ body {
 
 .sidebar {
   position: fixed;
-  top: 0;
+  top: 10%;
   bottom: 0;
   left: 0;
   z-index: 100; /* Behind the navbar */
@@ -61,10 +61,10 @@ body {
  */
 
 .navbar-brand {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
+  top: 0;
+  bottom: 90%;
   font-size: 1rem;
-  background-color: rgba(0, 0, 0, .25);
+  background-color: rgba(255, 255, 255, 0.25);
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
 }
 
@@ -76,7 +76,7 @@ body {
 
 .form-control-dark {
   color: #fff;
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgb(255, 255, 255);
   border-color: rgba(255, 255, 255, .1);
 }
 

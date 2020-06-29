@@ -1,0 +1,84 @@
+<!doctype html> 
+<html lang="en"> 
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+        <meta name="description" content=""> 
+        <meta name="author" content=""> 
+        <link rel="icon" href="../../../../favicon.ico"> 
+        <title>Admin Panel</title>         
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;display=swap" rel="stylesheet">
+        <link href="\src\main\resources\css\dashboard.css" rel="stylesheet" type="text/css"/> 
+
+        <script src="https://kit.fontawesome.com/669b1e0c10.js" crossorigin="anonymous"></script>
+        <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
+        <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
+        <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+
+        <script src="\inalan\inalan20150903.js"></script>
+        <script src="\inalan\bubblesort1.js"></script>
+    </head>     
+    <body onload="init();"> 
+        <nav class="navbar navbar-dark bg-primary"> 
+            <a href="#"><img src="../static/images/logo.png" alt="logo" height="50px" width="80px"></a> 
+            <h2 style="color: white;">Algorithm Learning by Animation</h2>
+            <ul class="navbar-nav px-3"> 
+                <li class="nav-item text-nowrap"> 
+                    <form method="get" action="/JavaWebApplication/UserController"> 
+                        <button type="submit" class="btn btn-light btn-link">Sign out</button>                         
+                    </form>                     
+                </li>                 
+            </ul>             
+        </nav>         
+        <div class="container-fluid"> 
+            <div class="row"> 
+                <nav class="col-md-2 d-none d-md-block bg-light sidebar"> 
+                    <div class="sidebar-sticky"> 
+                        <ul class="nav flex-column"> 
+                            <li class="nav-item"> 
+                                <a class="nav-link active" href=""> <span data-feather="monitor"></span> 
+                                    Tutorials <span class="sr-only">(current)</span> </a> 
+                            </li>                             
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="ExtensionReqReceivedByAdmin.jsp"> <span data-feather="file-text"></span> 
+                                    Quizzes </a> 
+                            </li>                             
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="ReminderToClient.jsp"> <span data-feather="award"></span> 
+                                    Result </a> 
+                            </li>                             
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="NewsLetterWrittenByAdmin.jsp"> <span data-feather="clipboard"></span> 
+                                    Students List </a> 
+                            </li>                                                        
+                        </ul>                         
+                    </div>                     
+                </nav>                                
+            </div>             
+        </div>    
+        <br>     
+        <!-- Animation Canvas-->
+        <div>
+            <h2 style="text-align:center;"> Bubble sort</h2>
+            <p style="text-align:center;">This animation shows the bubblesort algorithm. We compare every element with its right neighbour.<br/>
+                If the compared elements are not in ascending order, we swap them.</p>
+            <div style="text-align: center; margin-bottom: 45px;">
+            <canvas id="bubbleSortCanvas" width="700" height="430" style="border:1px solid black;background-color:#FFFDFA"></canvas>
+            </div>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->         
+        <!-- Placed at the end of the document so the pages load faster -->         
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>         
+        <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>         
+        <script src="../../../../assets/js/vendor/popper.min.js"></script>         
+        <script src="../../../../dist/js/bootstrap.min.js"></script>         
+        <!-- Icons -->         
+        <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>         
+        <script>
+            feather.replace()
+        </script>         
+        <!-- Graphs -->         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>         
+    </body>     
+</html>
